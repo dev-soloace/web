@@ -1,0 +1,22 @@
+<!DOCKTYPE html>
+<html>
+<head>
+</head>
+<body>
+<title>Synapse X Key Generator</title>
+<div>
+  <button type="randomSong" onclick="randomSong()">Random Key</button>
+  <input name="randomSong" id="randomSong">
+</div>
+
+<script>
+var song = Array("1", "2", "3", "4", "5", "6","7","8","9");
+
+function randomSong() {
+  var randomSong = song[Math.floor(Math.random() * song.length)];
+  document.getElementById('randomSong').value = randomSong;
+}
+</script>
+
+</body>
+</html>
